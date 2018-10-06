@@ -4,6 +4,6 @@
 rsync -azRv --exclude /home/andytower/Downloads/ --exclude /home/andytower/Yandex.Disk/ --exclude /home/andytower/Загрузки/ /home/andytower/ /backup/ > /backup/backup.log
 cd /backup
 tar -czf /backup/andytower_home.tar.gz home/
-cp /backup/andytower_home.tar.gz ~/Yandex.Disk/Backup
-rm /backup/andytower_home.tar.gz
+cp -v /backup/andytower_home.tar.gz ~/Yandex.Disk/Backup
+rm -v /backup/andytower_home.tar.gz
 yandex-disk sync
