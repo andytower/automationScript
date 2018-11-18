@@ -7,5 +7,6 @@ read answer
 
 if [[ $answer =~ [yY] ]] 
 then
-  yes Y | sudo apt upgrade 
+  yes Y | sudo apt upgrade
+  sudo apt autoremove
 fi	
